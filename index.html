@@ -3,236 +3,258 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Mr_Furkatovv — Frontend web developer portfolio. HTML, CSS, JavaScript, responsive websites and web apps.">
+    <title>Mr_Furkatovv | Web Developer Portfolio</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔥</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <header class="header">
-        <a href="#home" class="logo">
-            Mr_ <span>Furkatovv</span>
-        </a>
+        <a href="#home" class="logo">Mr_<span>Furkatovv</span></a>
 
-        <i class="bx bx-menu" id="menu-icon"></i>
+        <i class="bx bx-menu" id="menu-icon" aria-label="Open menu"></i>
         <nav class="navbar">
-            <a href="#home">Home</a>
+            <a href="#home" class="active">Home</a>
             <a href="#about">About</a>
+            <a href="#skills">Skills</a>
             <a href="#services">Services</a>
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
         </nav>
 
-        <button class="gradient-btn" >Contact Me</button>
+        <a href="#contact" class="gradient-btn">Contact Me</a>
     </header>
 
+    <!-- HOME -->
     <section class="home" id="home">
-        <div class="home-content">
+        <div class="home-content reveal">
             <h1>Hi, It's <span>Furkatov</span></h1>
-            <h3>I'm a <span>Web Developer</span>
-            </h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque dicta expedita, sed magnam officiis sint exercitationem soluta quod molestiae. Sequi qui ex iusto enim fugiat.</p>
+            <h3>I'm a <span class="typing-text"></span><span class="cursor">|</span></h3>
+            <p>I build modern, responsive and fast websites. I turn ideas and designs into clean, user-friendly web pages using HTML, CSS and JavaScript — and I keep learning something new every day.</p>
             <div class="social-icons">
-                <a href="#">
-                    <i class="bx bxl-github"></i>
-                </a>
- 
-                <a href="#">
-                <i class="bx bxl-linkedin-square"></i>
-                </a>
-
-                 <a href="#">
-                <i class="bx bxl-instagram-alt"></i>
-                </a>
-
-                <a href="#">
-                <i class="bx bxl-twitter"></i>
-                </a>
+                <a href="https://github.com/Furkatov0701" target="_blank" rel="noopener" aria-label="GitHub"><i class="bx bxl-github"></i></a>
+                <a href="#" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bx bxl-linkedin-square"></i></a>
+                <a href="#" target="_blank" rel="noopener" aria-label="Instagram"><i class="bx bxl-instagram-alt"></i></a>
+                <a href="#" target="_blank" rel="noopener" aria-label="Telegram"><i class="bx bxl-telegram"></i></a>
             </div>
             <div class="btn-group">
-                <a href="#" class="btn">Hire</a>
-                <a href="#contact" class="btn">Contact</a>
+                <a href="#contact" class="btn">Hire Me</a>
+                <a href="#projects" class="btn">My Projects</a>
             </div>
         </div>
 
-        <div class="home-img">
-            <img src="./image/photo_2025-06-12_13-19-53.jpg" alt="">
+        <div class="home-img reveal">
+            <img src="./image/photo_2025-06-12_13-19-53.jpg" alt="Furkatov portrait">
         </div>
     </section>
 
+    <!-- ABOUT -->
     <section class="about" id="about">
-
-        <div class="about-img">
-            <img src="./image/photo_2025-06-12_13-19-53.jpg" alt="">
+        <div class="about-img reveal">
+            <img src="./image/photo_2025-06-12_12-49-09.jpg" alt="Furkatov at work">
         </div>
 
-        <div class="about-content">
+        <div class="about-content reveal">
             <h2>About <span>Me</span></h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque libero autem inventore sed repellendus, natus nihil optio voluptate rem aliquid? Suscipit quod fuga odio architecto?</p>
-            <a href="#" class="btn">Read More</a>
-        </div>
+            <h4>Frontend Developer from Uzbekistan</h4>
+            <p>Hi! I'm Furkatov Zabihulloh, a young and motivated web developer. I started my journey with HTML and CSS, and today I create complete landing pages, blogs and small web applications with JavaScript.</p>
+            <p class="more-text">I love clean design, pixel-perfect layouts and responsive interfaces that look great on every device. Like the book in my hands says — tiny changes bring remarkable results, so I improve my skills a little every single day. My next goals are React and backend development.</p>
 
+            <div class="stats">
+                <div class="stat"><h3><span>7+</span></h3><p>Projects</p></div>
+                <div class="stat"><h3><span>1+</span></h3><p>Year learning</p></div>
+                <div class="stat"><h3><span>100%</span></h3><p>Responsive</p></div>
+            </div>
+
+            <button class="btn" id="read-more">Read More</button>
+        </div>
     </section>
 
-    <section class="services" id="services">
+    <!-- SKILLS -->
+    <section class="skills" id="skills">
+        <h2 class="heading">My <span>Skills</span></h2>
 
-        <h2 class="heading">Services</h2>
+        <div class="skills-container">
+            <div class="skill reveal">
+                <div class="skill-head"><span class="skill-name"><i class="bx bxl-html5"></i> HTML5</span><span class="skill-percent">95%</span></div>
+                <div class="skill-bar"><div class="skill-fill" data-width="95%"></div></div>
+            </div>
+            <div class="skill reveal">
+                <div class="skill-head"><span class="skill-name"><i class="bx bxl-css3"></i> CSS3</span><span class="skill-percent">90%</span></div>
+                <div class="skill-bar"><div class="skill-fill" data-width="90%"></div></div>
+            </div>
+            <div class="skill reveal">
+                <div class="skill-head"><span class="skill-name"><i class="bx bxl-javascript"></i> JavaScript</span><span class="skill-percent">75%</span></div>
+                <div class="skill-bar"><div class="skill-fill" data-width="75%"></div></div>
+            </div>
+            <div class="skill reveal">
+                <div class="skill-head"><span class="skill-name"><i class="bx bxl-bootstrap"></i> Bootstrap</span><span class="skill-percent">80%</span></div>
+                <div class="skill-bar"><div class="skill-fill" data-width="80%"></div></div>
+            </div>
+            <div class="skill reveal">
+                <div class="skill-head"><span class="skill-name"><i class="bx bxl-git"></i> Git &amp; GitHub</span><span class="skill-percent">70%</span></div>
+                <div class="skill-bar"><div class="skill-fill" data-width="70%"></div></div>
+            </div>
+            <div class="skill reveal">
+                <div class="skill-head"><span class="skill-name"><i class="bx bxl-figma"></i> Figma</span><span class="skill-percent">65%</span></div>
+                <div class="skill-bar"><div class="skill-fill" data-width="65%"></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services" id="services">
+        <h2 class="heading">My <span>Services</span></h2>
 
         <div class="services-container">
-            <div class="service-box">
+            <div class="service-box reveal">
                 <div class="service-info">
                     <i class="bx bxl-figma"></i>
                     <h4>UI / UX Design</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum magnam ad accusamus amet praesentium a odio nisi nam iure sit ipsa, quae facere maxime enim.</p>
-
+                    <p>Simple, modern and user-friendly interfaces. I plan the layout, colors and typography so visitors can easily find what they need.</p>
                 </div>
             </div>
 
-             <div class="service-box">
+            <div class="service-box reveal">
                 <div class="service-info">
-                    <i class="bx bxl-code"></i>
-                    <h4>Frontend Development  </h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum magnam ad accusamus amet praesentium a odio nisi nam iure sit ipsa, quae facere maxime enim.</p>
-                    
+                    <i class="bx bx-code-alt"></i>
+                    <h4>Frontend Development</h4>
+                    <p>Landing pages, portfolios, blogs and business websites built with HTML, CSS and JavaScript — fast, clean and fully responsive.</p>
                 </div>
             </div>
 
-            <div class="service-box">
+            <div class="service-box reveal">
                 <div class="service-info">
-                    <i class="bx bxl-curly"></i>
-                    <h4>Backend Development</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum magnam ad accusamus amet praesentium a odio nisi nam iure sit ipsa, quae facere maxime enim.</p>
-                    
+                    <i class="bx bx-mobile-alt"></i>
+                    <h4>Responsive Websites</h4>
+                    <p>Every site I build adapts perfectly to phones, tablets and desktops, so your visitors get a great experience on any screen.</p>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- PROJECTS -->
     <section class="projects" id="projects">
-
-        <h2 class="heading">Projects</h2>
+        <h2 class="heading">Latest <span>Projects</span></h2>
 
         <div class="projects-box">
-
-            <div class="project-card">
-                <img src="./image/Screenshot_12-6-2025_11357_127.0.0.1.jpeg" alt="">
-
-                <h3>Project 1</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, ea atque minus unde in illum corrupti enim vero quisquam nesciunt tenetur eum soluta ut similique.</p>
-                <div class="btn">Review Project</div>
+            <div class="project-card reveal">
+                <img src="./image/Screenshot_12-6-2025_11357_127.0.0.1.jpeg" alt="Zamso auction website" loading="lazy">
+                <h3>Zamso Auction</h3>
+                <p>An online car auction website with a hero banner, participant invitation and an admin panel entry.</p>
+                <div class="tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+                <button class="btn view-btn">View Project</button>
             </div>
 
-                        <div class="project-card">
-                <img src="./image/Screenshot_12-6-2025_113950_127.0.0.1.jpeg" alt="">
-
-                <h3>Project 2</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, ea atque minus unde in illum corrupti enim vero quisquam nesciunt tenetur eum soluta ut similique.</p>
-                <div class="btn">Review Project</div>
+            <div class="project-card reveal">
+                <img src="./image/Screenshot_12-6-2025_113950_127.0.0.1.jpeg" alt="Food restaurant landing page" loading="lazy">
+                <h3>Food Landing</h3>
+                <p>A bright fast-food restaurant landing page with an eye-catching hero, menu section and booking button.</p>
+                <div class="tags"><span>HTML</span><span>CSS</span></div>
+                <button class="btn view-btn">View Project</button>
             </div>
 
-                        <div class="project-card">
-                <img src="./image/Screenshot_12-6-2025_114058_127.0.0.1.jpeg" alt="">
-
-                <h3>Project 3</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, ea atque minus unde in illum corrupti enim vero quisquam nesciunt tenetur eum soluta ut similique.</p>
-                <div class="btn">Review Project</div>
+            <div class="project-card reveal">
+                <img src="./image/Screenshot_12-6-2025_114058_127.0.0.1.jpeg" alt="W. news blog" loading="lazy">
+                <h3>W. News Blog</h3>
+                <p>A modern news and tech blog layout with a featured article and a "New" sidebar for the latest posts.</p>
+                <div class="tags"><span>HTML</span><span>CSS</span><span>Grid</span></div>
+                <button class="btn view-btn">View Project</button>
             </div>
 
-                        <div class="project-card">
-                <img src="./image/Screenshot_12-6-2025_114159_127.0.0.1.jpeg" alt="">
-
-                <h3>Project 4</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, ea atque minus unde in illum corrupti enim vero quisquam nesciunt tenetur eum soluta ut similique.</p>
-                <div class="btn">Review Project</div>
+            <div class="project-card reveal">
+                <img src="./image/Screenshot_12-6-2025_114159_127.0.0.1.jpeg" alt="Quiz App" loading="lazy">
+                <h3>Quiz App</h3>
+                <p>A quiz web application where users can add new quizzes, take tests and manage them from an admin service.</p>
+                <div class="tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+                <button class="btn view-btn">View Project</button>
             </div>
 
-                        <div class="project-card">
-                <img src="./image/Screenshot_12-6-2025_11442_127.0.0.1.jpeg" alt="">
-
-                <h3>Project 5</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, ea atque minus unde in illum corrupti enim vero quisquam nesciunt tenetur eum soluta ut similique.</p>
-                <div class="btn">Review Project</div>
+            <div class="project-card reveal">
+                <img src="./image/Screenshot_12-6-2025_11442_127.0.0.1.jpeg" alt="Start agency website" loading="lazy">
+                <h3>Start Agency</h3>
+                <p>A creative agency landing page with a friendly illustration, portfolio and services sections.</p>
+                <div class="tags"><span>HTML</span><span>CSS</span></div>
+                <button class="btn view-btn">View Project</button>
             </div>
 
-                        <div class="project-card">
-                <img src="./image/Screenshot_12-6-2025_114554_127.0.0.1.jpeg" alt="">
-
-                <h3>Project 6</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, ea atque minus unde in illum corrupti enim vero quisquam nesciunt tenetur eum soluta ut similique.</p>
-                <div class="btn">Review Project</div>
+            <div class="project-card reveal">
+                <img src="./image/Screenshot_12-6-2025_114554_127.0.0.1.jpeg" alt="Skynet Eats grocery delivery" loading="lazy">
+                <h3>Skynet Eats</h3>
+                <p>A grocery delivery landing page — "delivery straight to your window" — with a drone illustration.</p>
+                <div class="tags"><span>HTML</span><span>CSS</span></div>
+                <button class="btn view-btn">View Project</button>
             </div>
 
+            <div class="project-card reveal">
+                <img src="./image/Screenshot_12-6-2025_11490_127.0.0.1.jpeg" alt="Reach Out contact form" loading="lazy">
+                <h3>Reach Out Form</h3>
+                <p>A stylish contact form page with rounded inputs and a futuristic image to get in touch with users.</p>
+                <div class="tags"><span>HTML</span><span>CSS</span><span>Forms</span></div>
+                <button class="btn view-btn">View Project</button>
+            </div>
         </div>
-    </setion>
+    </section>
 
-
-
+    <!-- CONTACT -->
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me</span></h2>
 
-        <form action="#">
-
+        <form id="contact-form">
             <div class="input-group">
                 <div class="input-box">
-                    <input type="text" placeholder="Full Name">
-                    <input type="email" placeholder="Email">
+                    <input type="text" name="name" placeholder="Full Name" required>
+                    <input type="email" name="email" placeholder="Email" required>
                 </div>
                 <div class="input-box">
-                    <input type="number" placeholder="Phone Number">
-                    <input type="text" placeholder="Subject">
+                    <input type="tel" name="phone" placeholder="Phone Number">
+                    <input type="text" name="subject" placeholder="Subject" required>
                 </div>
             </div>
 
             <div class="input-group-2">
-                <textarea name="" id="" placeholder="Your Message" cols="30" rows="10"></textarea>
-                <input type="submit" value="Send Message" class="btn"
-                >
+                <textarea name="message" placeholder="Your Message" rows="10" required></textarea>
+                <input type="submit" value="Send Message" class="btn">
+                <p class="form-status" aria-live="polite"></p>
             </div>
         </form>
     </section>
- <footer class="footer">
-    <div class="social-icons">
-                <a href="#">
-                    <i class="bx bxl-github"></i>
-                </a>
- 
-                <a href="#">
-                <i class="bx bxl-linkedin-square"></i>
-                </a>
 
-                 <a href="#">
-                <i class="bx bxl-instagram-alt"></i>
-                </a>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="social-icons">
+            <a href="https://github.com/Furkatov0701" target="_blank" rel="noopener" aria-label="GitHub"><i class="bx bxl-github"></i></a>
+            <a href="#" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bx bxl-linkedin-square"></i></a>
+            <a href="#" target="_blank" rel="noopener" aria-label="Instagram"><i class="bx bxl-instagram-alt"></i></a>
+            <a href="#" target="_blank" rel="noopener" aria-label="Telegram"><i class="bx bxl-telegram"></i></a>
+        </div>
 
-                <a href="#">
-                <i class="bx bxl-twitter"></i>
-                </a>
-            </div>
+        <ul class="list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <p class="copyright">&copy; <span id="year">2025</span> Mr_Furkatovv | All rights reserved</p>
+    </footer>
 
-            <ul class="list">
-                <li>
-                    <a href="#">FAQ</a>
-                </li>
+    <a href="#home" class="top-btn" aria-label="Back to top"><i class="bx bx-up-arrow-alt"></i></a>
 
-                <li>
-                    <a href="#services">Services</a>
-                </li>
+    <!-- Project preview modal -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <i class="bx bx-x modal-close" id="modal-close"></i>
+            <img src="" alt="" id="modal-img">
+            <h3 id="modal-title"></h3>
+        </div>
+    </div>
 
-                                <li>
-                    <a href="#about">About Me</a>
-                </li>
-
-                                <li>
-                    <a href="#projects">Projects</a>
-                </li>
-
-                                <li>
-                    <a href="#contact">Contact</a>
-                </li>
-            </ul>
-            <p class="copyright">@ Mr_Furkatovv || All right reserved</p>
- </footer>
-
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
